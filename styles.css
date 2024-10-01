@@ -1,0 +1,168 @@
+/* CSS Atualizado */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; /* Adiciona padding zero para todos os elementos */
+}
+
+body {
+    background: white;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background: red;
+}
+
+header h1 {
+    font-size: 2.5rem; /* Usando rem para responsividade */
+    color: white;
+    font-family: "Domine", serif;
+    font-weight: normal;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Ajusta a altura para auto */
+    width: 100%;
+    background-color: blue;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha */
+}
+
+.hero img {
+    max-width: 80%; /* Mantém a imagem responsiva */
+    padding: 20px; /* Ajuste de padding */
+}
+
+.box-img {
+    flex: 1 1 35%; /* Usar flex para melhor responsividade */
+    display: flex;
+    justify-content: center;
+}
+
+.box-txt {
+    flex: 1 1 35%; /* Usar flex para melhor responsividade */
+    color: white;
+    text-align: center; /* Centraliza o texto */
+}
+
+.box-txt span {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.box-txt h2 {
+    font-family: "DM Sans", sans-serif; 
+    font-size: 2.5rem; /* Usando rem para responsividade */
+    font-weight: 500;
+    margin: 15px 0 25px;
+}
+
+.box-txt p {
+    font-weight: bold;
+    color: white;
+    margin: 20px;
+}
+
+.btn-hero {
+    background: red;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.5s; 
+    margin: 20px;
+}
+
+.btn-hero:hover { 
+    background: #f54242;
+}
+
+.especialidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    font-weight: bold;
+}
+
+.especialidades h3 {
+    font-size: 2rem; /* Usando rem para responsividade */
+    font-weight: bold;
+    color: white;
+}
+
+.especialidades p {
+    margin: 20px;
+    color: white;
+}
+
+.box-item {
+    flex: 1 1 30%; /* Usar flex para melhor responsividade */
+    height: 380px;
+    background: red;
+    margin: 5px;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.m-top {
+    margin-top: 100px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    height: 150px;
+    color: white;
+    font-size: 15px;
+}
+
+.whats {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.wpp {
+    position: fixed;
+    left: 10px; 
+    bottom: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    header h1 {
+        font-size: 2rem; /* Reduzir o tamanho da fonte em telas médias */
+    }
+    
+    .box-item {
+        flex: 1 1 45%; /* 2 itens por linha em telas médias */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero {
+        flex-direction: column; /* Ajusta o layout da hero em telas pequenas */
+    }
+
+    .box-img, .box-txt {
+        width: 100%; /* Faz os itens ocuparem 100% da largura */
+    }
+
+    .box-item {
+        flex: 1 1 100%; /* 1 item por linha em telas pequenas */
+    }
+}
